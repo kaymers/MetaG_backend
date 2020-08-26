@@ -1,0 +1,1 @@
+Extract the rar files nucl_gb.rar and nucl_wgs.rar here. Do not create subdirectories. Extract them right here!

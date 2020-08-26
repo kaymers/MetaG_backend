@@ -108,4 +108,6 @@ venv.bak/
 .mypy_cache/
 /input/
 /output/
-/mapper_data/
+mapper_data/*
+!mapper_data/*.rar
+!mapper_data/*.txt
