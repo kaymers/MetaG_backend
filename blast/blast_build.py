@@ -1,0 +1,1 @@
+command_line = 'makeblastdb -in ./blast_data/data.fasta -parse_seqids -blastdb_version 4 -title "tool" -dbtype nucl'
