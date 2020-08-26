@@ -1,17 +1,26 @@
 # MetaG_backend
 
-## Configuring
-Install dependancies in *requirements.txt*.
+## Setup dependancies
 
-Extract .rar files in *mapper_data* to *mapper_data*.
 
-### Edit the config.ini
+1. Install dependancies in *requirements.txt*. (pip install -r requirements.txt)
 
-Set blast_db_directory and blast_db_name according to the blast setup in your machine (you need to have blast in your machine)
+2. Extract all the .rar files in *mapper_data* folder to *mapper_data* folder.
 
+If you do not have blast configured in your machine follow the below steps.
+
+3. Install BLAST+ executables [manual](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
+
+4. Add blast+ executables insallation directory to *path*.
+
+5. Create a blast database (or configure a standard database like nt).
+
+### Edit the config.ini (in this repository root)
+
+6. Set blast_db_directory and blast_db_name according to the blast setup in your machine.
 Extract rankedlineage.dmp from ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.zip to your machine and set the path for the field *rankedlineage_path* in *config.ini*.
 
-You can leave the fields *mapper_data_directory* and *mapper_data_filenames* without change if you follow the instructions for configuring mapper_data in an earlier step.
+7. You can leave the fields *mapper_data_directory* and *mapper_data_filenames* without change if you follow the instructions for configuring mapper_data in an earlier step.
 
 Backend should be ready to use.
 
