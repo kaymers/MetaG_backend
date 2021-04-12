@@ -14,8 +14,9 @@ from autoencoder import autoencoder
 from reader import reader
 
 
-def process(input_fasta_path, k, epochs, activation, layers_sizes, train_perc, config_path=backend_path + '/config.ini',
-            data=None):
+def process(input_fasta_path, k, epochs, activation, layers_sizes, train_perc, run_vect, run_AE,
+            run_blast, data=None, config_path=backend_path + '/config.ini'
+            ):
     config = parse_config(config_path)
 
     data = reader.process(config, input_fasta_path, k)
