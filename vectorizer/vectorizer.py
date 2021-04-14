@@ -22,7 +22,12 @@ def all_kmers(k):
     all_kmers_cache[k] = unique_kmers
     return unique_kmers
 
+ii=0
 def vectorize_seq(seq, k=4):
+    global ii
+    ii+=1
+    if ii%1000==0:print(ii)
+
     d = defaultdict(lambda: 0)
     for c in range(len(seq)-k+1):
         d[seq[c:c+k]]+=1

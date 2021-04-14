@@ -56,3 +56,5 @@ def process(config, data, epochs, activation, layers_sizes, train_perc):
             for c in range(len(points[pointer])):
                 data.loc[i,'a'+str(c)] = points[pointer][c]
             pointer+=1
+
+    print('autoencoder done')
