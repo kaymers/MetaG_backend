@@ -47,13 +47,4 @@ def process(config, data):
                     result[i] = -1
 
     data['taxid'] = pd.Series([result[x] for x in range(len(data))])
-
-
-
-
-
-# request = []
-# map_file_ptr = open("./mapper_data/nucl_gb", "rb")
-# for i in range(3000): request.append(read_key(random.randint(0, 250000000)).decode('ascii').replace('\x00',''))
-#
-# k = process(request)
+    print('mapping done')

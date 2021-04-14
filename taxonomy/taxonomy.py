@@ -23,3 +23,5 @@ def process(config, data):
 
     for i in range(8):
         data['lin_'+str(i)] = pd.Series([lineages[x][i] for x in range(data.shape[0])])
+
+    print('taxonomy done')

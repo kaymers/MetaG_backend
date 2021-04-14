@@ -1,3 +1,3 @@
 from backend import process
 
-l=process('C:\\fyp\input\input_small.fasta', 3, 150, 'sigmoid', [32,3,32],.6)
+data=process('/home/sadeepw/Desktop/sample1.fasta', 3, 15, 'sigmoid', [32,3,32],.6, data = data, run_vect = True, run_AE = True, run_blast=False)

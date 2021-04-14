@@ -59,11 +59,12 @@ def process(config, path, k):
         #if count == 100000: break
         count += 1
 
-    data = pd.DataFrame(ids, columns=['id'], dtype=object)
+    data = pd.DataFrame(ids, columns=['id'])
     data['vector'] = data['id'].map(lambda x: sequences[x])
     data['a'] = data['id'].map(lambda x: a[x])
     data['c'] = data['id'].map(lambda x: c[x])
     data['g'] = data['id'].map(lambda x: g[x])
     data['t'] = data['id'].map(lambda x: t[x])
     print("Reading & Vectorizing done",time.strftime('%X'))
+    print('loaded & vectorized input file')
     return data
